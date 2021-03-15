@@ -1,0 +1,16 @@
+GET http://localhost:8080/authorize?user=test&password=test
+Accept: application/json
+
+###
+GET http://localhost:8080/authorize?user=test&password=no
+Accept: application/json
+
+###
+GET http://localhost:8080/authorize?name=test
+Accept: application/json
+
+###
+GET http://localhost:8080/authorize
+Accept: application/json
+
+###
