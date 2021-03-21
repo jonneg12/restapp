@@ -1,0 +1,16 @@
+version: '3.6'
+
+services:
+  app_1:
+    build: ./
+    ports:
+    - 8080
+    environment:
+      TEST: env_TEST_2
+
+  app_2:
+    image: my_app:latest
+    ports:
+    - 8080
+    environment:
+      TEST: env_TEST_2
